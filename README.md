@@ -1,5 +1,7 @@
 # LMCache One Click Deployment 
 
+## Usage
+
 ```bash
 LAMBDA_LABS_API_KEY=<YOUR LAMBDA LABS API KEY> docker compose up
 ```
