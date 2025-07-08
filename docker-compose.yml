@@ -32,7 +32,7 @@ services:
       timeout: 5s
 
   migrate:
-    image: tensormesh/tensormesh:web-server-jul07
+    image: tensormesh/tensormesh:web-server-jul08
     environment:
       - NODE_ENV=production
       - DB_HOST=postgres
@@ -49,7 +49,7 @@ services:
     restart: "no"
 
   app:
-    image: tensormesh/tensormesh:web-server-jul07
+    image: tensormesh/tensormesh:web-server-jul08
     ports:
       - "3001:3001"
     environment:
@@ -70,6 +70,7 @@ services:
       - GITHUB_CLIENT_ID=your-github-client-id
       - GITHUB_CLIENT_SECRET=your-github-client-secret
       - GITHUB_CALLBACK_URL=http://localhost:3001/auth/github/callback
+
     depends_on:
       postgres:
         condition: service_healthy
