@@ -17,7 +17,7 @@ services:
       timeout: 5s
 
   gateway:
-    image: tensormesh/tensormesh:api-server
+    image: tensormesh/tensormesh:api-server-jul07
     environment:
       - LAMBDA_LABS_API_KEY=${LAMBDA_LABS_API_KEY}
     ports:
@@ -32,7 +32,7 @@ services:
       timeout: 5s
 
   migrate:
-    image: tensormesh/tensormesh:web-server
+    image: tensormesh/tensormesh:web-server-jul07
     environment:
       - NODE_ENV=production
       - DB_HOST=postgres
@@ -49,7 +49,7 @@ services:
     restart: "no"
 
   app:
-    image: tensormesh/tensormesh:web-server
+    image: tensormesh/tensormesh:web-server-jul07
     ports:
       - "3001:3001"
     environment:
