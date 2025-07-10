@@ -1,0 +1,57 @@
+name: Deploy Sphinx Docs
+
+on:
+  push:
+    branches:
+      - 'main'  # Matches main branch
+    paths:
+      - 'docs/**'
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install sphinx
+          pip install sphinx-rtd-theme
+          pip install alabaster
+
+      - name: Build Sphinx Documentation
+        run: |
+          cd docs
+          make html
+        continue-on-error: false
+
+      - name: Add .nojekyll
+        run: |
+          touch docs/build/html/.nojekyll
+
+      - name: Clone Target Repository
+        run: |
+          git clone https://github.com/TensorMesh-Website/tensormesh-website-docs.git target-repo
+
+      - name: Copy Files to Target Repository
+        run: |
+          cp -r docs/build/html/* target-repo/
+
+      - name: Commit and Push to Target Repository
+        run: |
+          cd target-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions@github.com"
+          git add .
+          if ! git diff --cached --quiet; then
+            git commit -m "Deploy updated Sphinx docs"
+            git push https://x-access-token:${{ secrets.TENSORMESH_DOC }}@github.com/TensorMesh-Website/tensormesh-website-docs.git main --force
+          else
+            echo "No changes to commit."
+          fi 
