@@ -1,11 +1,12 @@
-name: Deploy Sphinx Docs
+name: Deploy Sphinx Docs to GCS
 
 on:
   push:
     branches:
-      - 'main'  # Matches main branch
+      - 'main'
     paths:
       - 'docs/**'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -35,23 +36,10 @@ jobs:
         run: |
           touch docs/build/html/.nojekyll
 
-      - name: Clone Target Repository
-        run: |
-          git clone https://github.com/TensorMesh-Website/tensormesh-website-docs.git target-repo
-
-      - name: Copy Files to Target Repository
-        run: |
-          cp -r docs/build/html/* target-repo/
-
-      - name: Commit and Push to Target Repository
-        run: |
-          cd target-repo
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions@github.com"
-          git add .
-          if ! git diff --cached --quiet; then
-            git commit -m "Deploy updated Sphinx docs"
-            git push https://x-access-token:${{ secrets.TENSORMESH_DOC }}@github.com/TensorMesh-Website/tensormesh-website-docs.git main --force
-          else
-            echo "No changes to commit."
-          fi 
+      - name: Sync to GCS Bucket
+        uses: patrickwyler/gcs-bucket-sync-action@1.4
+        with:
+          secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
+          bucket: 'docs.tensormesh.ai'
+          sync_dir_from: 'docs/build/html'
+          exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$' 
