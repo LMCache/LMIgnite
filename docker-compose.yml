@@ -49,7 +49,7 @@ services:
     restart: "no"
 
   app:
-    image: tensormesh/lmingnite-ui:latest
+    image: tensormesh/lmignite-ui:latest
     ports:
       - "3001:3001"
     environment:
