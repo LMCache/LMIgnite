@@ -32,7 +32,7 @@ services:
       timeout: 5s
 
   migrate:
-    image: tensormesh/tensormesh:web-server-jul08
+    image: tensormesh/tensormesh:web-server-jul09
     environment:
       - NODE_ENV=production
       - DB_HOST=postgres
@@ -49,7 +49,7 @@ services:
     restart: "no"
 
   app:
-    image: tensormesh/tensormesh:web-server-jul08
+    image: tensormesh/tensormesh:web-server-jul09
     ports:
       - "3001:3001"
     environment:
