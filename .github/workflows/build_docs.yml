@@ -1,0 +1,45 @@
+name: Deploy Sphinx Docs to GCS
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'docs/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install sphinx
+          pip install sphinx-rtd-theme
+          pip install alabaster
+
+      - name: Build Sphinx Documentation
+        run: |
+          cd docs
+          make html
+        continue-on-error: false
+
+      - name: Add .nojekyll
+        run: |
+          touch docs/build/html/.nojekyll
+
+      - name: Sync to GCS Bucket
+        uses: patrickwyler/gcs-bucket-sync-action@1.4
+        with:
+          secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
+          bucket: 'docs.tensormesh.ai'
+          sync_dir_from: 'docs/build/html'
+          exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$' 

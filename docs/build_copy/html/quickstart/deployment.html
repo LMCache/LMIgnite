@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Deployment &#8212; lmcache-cloud-docs v0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=56c4699f" />
+    <script src="../_static/documentation_options.js?v=2fea6348"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tutorials" href="../tutorials/index.html" />
+    <link rel="prev" title="Launch the UI" href="launch-ui.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="deployment">
+<h1>Deployment<a class="headerlink" href="#deployment" title="Link to this heading">¶</a></h1>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=zB_Az3UbtQ4">📹 See demo video</a></p>
+<section id="create-a-cluster">
+<h2>1. Create a Cluster<a class="headerlink" href="#create-a-cluster" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>In the left sidebar, click <strong>Cluster</strong>, then hit <strong>+ Create Cluster</strong>.</p></li>
+<li><p>Fill in Cluster Configuration:</p>
+<ul>
+<li><p>Name (e.g. test)</p></li>
+<li><p>Cloud Provider (e.g. Lambda Labs)</p></li>
+<li><p>Region (e.g. us-south-1)</p></li>
+<li><p>GPU Type &amp; Count (e.g. 8 × H100)</p></li>
+<li><p>Hugging Face Token (paste your HF access token)</p></li>
+</ul>
+</li>
+<li><p>Click <strong>Create Cluster</strong> at the bottom right.</p></li>
+<li><p>You will see an info card containing status progression: <strong>Pending → init → wait_k8s → Active</strong>. Wait until the status shows <strong>Active</strong>.</p></li>
+</ul>
+<p>If it turns <strong>Fail to create</strong>, the instance wasn't available.</p>
+<ul class="simple">
+<li><p>Delete that cluster in the app.</p></li>
+<li><p>Go to your Lambda Labs dashboard and delete the orphaned instance.</p></li>
+<li><p>After deleting the cluster, you can change the configuration and try again.</p></li>
+</ul>
+</section>
+<section id="create-deployments">
+<h2>2. Create Deployments<a class="headerlink" href="#create-deployments" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>In the left sidebar, click <strong>Deployments</strong>, then hit <strong>+ Create Deployment</strong>.</p></li>
+<li><p>Search or select from the dropdown, pick the model you want to deploy (e.g. meta-llama/Llama-3.2-1B-Instruct).</p></li>
+<li><p>Configure basics</p>
+<ul>
+<li><p>Deployment Name: give it a descriptive name (e.g. llama-test).</p></li>
+<li><p>Target Cluster: select one of your Active clusters.</p></li>
+<li><p>The UI will auto-detect available GPUs and memory in that cluster.</p></li>
+</ul>
+</li>
+<li><p>Skip—or dive into—Advanced</p>
+<ul>
+<li><p>To quick-start, click <strong>Create Deployment</strong> now.</p></li>
+<li><p>For finer control, click <strong>Next: Advanced</strong>. Advanced settings are grouped in three tabs:</p>
+<ul>
+<li><p>🧠 LM Cache</p>
+<ul>
+<li><p>CPU/Disk Offloading Buffer Size, P/D Disaggregation, CacheBlend, etc.</p></li>
+</ul>
+</li>
+<li><p>🤖 Model</p>
+<ul>
+<li><p>Max Model Length, Max Number of Sequences, Dtype, etc.</p></li>
+</ul>
+</li>
+<li><p>⚡️ vLLM</p>
+<ul>
+<li><p>TP Size, GPU Memory Utilization, Enable Chunked Prefill, etc.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Launch!</p>
+<ul>
+<li><p>Once you click <strong>Create Deployment</strong>, you'll see an info card for your deployment containing status progression.</p></li>
+<li><p>If it fails, check logs.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="tips">
+<h2>Tips<a class="headerlink" href="#tips" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">lmcache-cloud-docs</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quick Start Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="launch-ui.html">Launch the UI</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="launch-ui.html" title="previous chapter">Launch the UI</a></li>
+      <li>Next: <a href="../tutorials/index.html" title="next chapter">Tutorials</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Yihua Cheng.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/quickstart/deployment.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html> 
