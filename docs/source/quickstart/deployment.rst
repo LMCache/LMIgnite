@@ -7,7 +7,7 @@ Deployment
 
    <div style="max-width: 560px;">
      <iframe width="560" height="315"
-       src="https://www.youtube.com/embed/zB_Az3UbtQ4"
+       src="https://www.youtube.com/embed/w_0Ruwk5IyY"
        title="YouTube video player"
        frameborder="0"
        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -30,11 +30,11 @@ Deployment
 * Click **Create Cluster** at the bottom right.
 * You will see an info card containing status progression: **Pending → init → wait_k8s → Active**. Wait until the status shows **Active**.
 
-If it turns **Fail to create**, the instance wasn't available.
+.. note::
+    If it turns **Fail to create**, the instance wasn't available.
 
-* Delete that cluster in the app.
-* Go to your Lambda Labs dashboard and delete the orphaned instance.
-* After deleting the cluster, you can change the configuration and try again.
+    * Delete the cluster in the web interface (no need to delete the instance from the Lambda Labs dashboard).
+    * Change the configuration and try again. Most often, switching to a different region helps.
 
 2. Create Deployments
 ---------------------
