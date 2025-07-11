@@ -70,4 +70,4 @@ LMIgnite provides comprehensive support for major cloud platforms and orchestrat
   
   * Kubernetes clusters
 
-* **Other GPU Vendors** 
+* **Other GPU Vendors**
