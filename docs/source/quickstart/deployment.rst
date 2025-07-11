@@ -1,7 +1,19 @@
 Deployment
 ==========
 
-`📹 See demo video <https://www.youtube.com/watch?v=zB_Az3UbtQ4>`_
+📹 See demo video
+
+.. raw:: html
+
+   <div style="max-width: 560px;">
+     <iframe width="560" height="315"
+       src="https://www.youtube.com/embed/zB_Az3UbtQ4"
+       title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+     </iframe>
+   </div>
 
 1. Create a Cluster
 -------------------
@@ -28,10 +40,10 @@ If it turns **Fail to create**, the instance wasn't available.
 ---------------------
 
 * In the left sidebar, click **Deployments**, then hit **+ Create Deployment**.
-* Search or select from the dropdown, pick the model you want to deploy (e.g. meta-llama/Llama-3.2-1B-Instruct).
+* Search or select from existing model cards, pick the model you want to deploy (e.g. meta-llama/Llama-3.2-1B-Instruct).
 * Configure basics
 
-  * Deployment Name: give it a descriptive name (e.g. llama-test).
+  * Deployment Name: give it a descriptive name (e.g. llama-8b-test).
   * Target Cluster: select one of your Active clusters.
   * The UI will auto-detect available GPUs and memory in that cluster.
 
