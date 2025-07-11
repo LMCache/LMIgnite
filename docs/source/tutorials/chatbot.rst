@@ -1,12 +1,12 @@
 Chatbot Integration
 ===================
 
-Learn how to integrate LMCache Cloud with your chatbot application using the endpoint and API key from the LMCache Cloud UI.
+Learn how to integrate LMIgnite with your chatbot application using the endpoint and API key from the LMIgnite UI.
 
 Getting Started with Chatbot Integration
 ----------------------------------------
 
-Once you have obtained your endpoint URL and API key from the LMCache Cloud web interface, you can easily integrate caching into your chatbot application. The following tutorial demonstrates how to set up a simple chatbot that leverages LMCache Cloud for improved response times and reduced API costs.
+Once you have obtained your endpoint URL and API key from the LMIgnite web interface, you can easily integrate caching into your chatbot application. The following tutorial demonstrates how to set up a simple chatbot that leverages LMIgnite for improved response times and reduced API costs.
 
 .. raw:: html
 
@@ -18,7 +18,7 @@ Once you have obtained your endpoint URL and API key from the LMCache Cloud web 
 Basic Chatbot Setup
 -------------------
 
-Here's a simple example of how to create a chatbot using your LMCache Cloud endpoint:
+Here's a simple example of how to create a chatbot using your LMIgnite endpoint:
 
 .. code-block:: python
 
