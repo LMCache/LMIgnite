@@ -1,5 +1,5 @@
 What is LMIgnite?
-======================
+=================
 
 LMIgnite is a product solution that allows users to do 1-click deployment of **vLLM production stack** and **LMCache** as a cloud/on-prem hosted commercial cloud for fast and low latency genAI inference serving. It features a beautiful, intuitive web UI that can be hosted locally, providing easy management and monitoring of your LLM infrastructure across various cloud platforms.
 
