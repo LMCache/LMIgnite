@@ -1,5 +1,5 @@
-Deployment
-==========
+Deploy Model
+============
 
 📹 See demo video
 
@@ -18,6 +18,9 @@ Deployment
 1. Create a Cluster
 -------------------
 
+.. note::
+   Provisioning resources can take time. You may need to wait up to **20 minutes** for Lambda to provide GPUs.
+
 * In the left sidebar, click **Cluster**, then hit **+ Create Cluster**.
 * Fill in Cluster Configuration:
 
@@ -31,13 +34,16 @@ Deployment
 * You will see an info card containing status progression: **Pending → init → wait_k8s → Active**. Wait until the status shows **Active**.
 
 .. note::
-    If it turns **Fail to create**, the instance wasn't available.
+   If it turns **Fail to create**, the instance wasn't available.
 
-    * Delete the cluster in the web interface (no need to delete the instance from the Lambda Labs dashboard).
-    * Change the configuration and try again. Most often, switching to a different region helps.
+   * Delete the cluster in the web interface (no need to delete the instance from the Lambda Labs dashboard).
+   * Change the configuration and try again. Most often, switching to a different region helps.
 
 2. Create Deployments
 ---------------------
+
+.. note::
+   The deployment process itself could take up to **10 minutes** to complete.
 
 * In the left sidebar, click **Deployments**, then hit **+ Create Deployment**.
 * Search or select from existing model cards, pick the model you want to deploy (e.g. meta-llama/Llama-3.2-1B-Instruct).
