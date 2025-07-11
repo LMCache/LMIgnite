@@ -1,7 +1,7 @@
 Tutorials
 =========
 
-Step-by-step tutorials to help you master LMCache Cloud features and use cases.
+Step-by-step tutorials to help you master LMIgnite features and use cases.
 
 .. toctree::
    :maxdepth: 2

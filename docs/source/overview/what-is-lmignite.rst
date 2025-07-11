@@ -1,7 +1,7 @@
-What is LMCache Cloud?
-======================
+What is LMIgnite?
+=================
 
-LMCache Cloud is a product solution that allows users to do 1-click deployment of **vLLM production stack** and **LMCache** as a cloud/on-prem hosted commercial cloud for fast and low latency genAI inference serving. It features a beautiful, intuitive web UI that can be hosted locally, providing easy management and monitoring of your LLM infrastructure across various cloud platforms.
+LMIgnite is a product solution that allows users to do 1-click deployment of **vLLM production stack** and **LMCache** as a cloud/on-prem hosted commercial cloud for fast and low latency genAI inference serving. It features a beautiful, intuitive web UI that can be hosted locally, providing easy management and monitoring of your LLM infrastructure across various cloud platforms.
 
 About LMCache
 -------------
@@ -21,7 +21,7 @@ The key performance advantage brought by LMCache is the smart caching, migration
 Enterprise Features
 -------------------
 
-LMCache Cloud provides comprehensive enterprise-grade features including:
+LMIgnite provides comprehensive enterprise-grade features including:
 
 * **Multi-tenancy Support**: Secure isolation and resource management for multiple users or organizations
 * **LoRA Support**: Efficient fine-tuning and adaptation capabilities for custom model variants
@@ -52,7 +52,7 @@ Use Cases
 Platform and Vendor Support
 ---------------------------
 
-LMCache Cloud provides comprehensive support for major cloud platforms and orchestration systems:
+LMIgnite provides comprehensive support for major cloud platforms and orchestration systems:
 
 * **Amazon Web Services (AWS)**
   
@@ -70,4 +70,4 @@ LMCache Cloud provides comprehensive support for major cloud platforms and orche
   
   * Kubernetes clusters
 
-* **Other GPU Vendors**
+* **Other GPU Vendors** 
