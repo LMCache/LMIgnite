@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'lmcache-cloud-docs'
-copyright = '2025, Yihua Cheng'
-author = 'Yihua Cheng'
+project = 'lmignite-docs'
+copyright = '2025, TensorMesh, Inc.'
+author = 'TensorMesh, Inc.'
 release = 'v0.0.1'
 
 # -- General configuration ---------------------------------------------------

@@ -1,11 +1,11 @@
 Overview
 ========
 
-This section provides an overview of LMCache Cloud, its architecture, and key concepts.
+This section provides an overview of LMIgnite, its architecture, and key concepts.
 
 .. toctree::
    :maxdepth: 1
    :caption: Overview:
 
-   what-is-lmcache-cloud
+   what-is-lmignite
    architecture 

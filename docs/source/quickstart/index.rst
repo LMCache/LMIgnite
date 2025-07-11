@@ -6,7 +6,7 @@ Get up and running with **One-Click Deployment** in just a few simple steps.
 This guide is split into three main sections:
 
 - :doc:`prerequisites`
-- :doc:`launch-ui`
+- :doc:`launch-web-interface`
 - :doc:`deployment`
 
 Feel free to let us know if anything's unclear or you need more details!
@@ -16,5 +16,5 @@ Feel free to let us know if anything's unclear or you need more details!
    :hidden:
 
    prerequisites
-   launch-ui
+   launch-web-interface
    deployment 

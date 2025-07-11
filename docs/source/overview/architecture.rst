@@ -1,7 +1,7 @@
 Architecture
 ============
 
-LMCache Cloud is built on a distributed architecture designed for high performance and reliability.
+LMIgnite is built on a distributed architecture designed for high performance and reliability.
 
 System Components
 -----------------
@@ -15,7 +15,7 @@ System Components
 Data Flow
 ---------
 
-1. Client sends request to LMCache Cloud
+1. Client sends request to LMIgnite
 2. System checks cache for existing response
 3. If cached, returns response immediately
 4. If not cached, forwards to language model
