@@ -1,2 +1,7 @@
 docs/build/
 docs/build_copy/
+
+# Python
+__pycache__/
+.DS_Store
+docs/.DS_Store

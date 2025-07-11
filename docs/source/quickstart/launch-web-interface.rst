@@ -7,7 +7,7 @@ Launch LMIgnite Web Interface
 
    <div style="max-width: 560px;">
      <iframe width="560" height="315"
-       src="https://www.youtube.com/embed/zB_Az3UbtQ4"
+       src="https://www.youtube.com/embed/w_0Ruwk5IyY"
        title="YouTube video player"
        frameborder="0"
        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
