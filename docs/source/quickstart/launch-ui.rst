@@ -1,7 +1,19 @@
 Launch the UI
 ============
 
-`📹 See demo video <https://www.youtube.com/watch?v=zB_Az3UbtQ4>`_
+📹 See demo video
+
+.. raw:: html
+
+   <div style="max-width: 560px;">
+     <iframe width="560" height="315"
+       src="https://www.youtube.com/embed/zB_Az3UbtQ4"
+       title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+     </iframe>
+   </div>
 
 1. Clone the repo
 -----------------
