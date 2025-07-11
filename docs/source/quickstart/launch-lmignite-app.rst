@@ -1,5 +1,5 @@
-Launch LMIgnite Web Interface
-=============================
+Launch LMIgnite App
+===================
 
 📹 See demo video
 
@@ -27,7 +27,7 @@ Launch LMIgnite Web Interface
 
    cd one-click-deployment
 
-2. Launch LMIgnite Web Interface
+2. Launch LMIgnite App
 --------------------------------
 
 Set your Lambda Labs API key and start the app in your shell:
