@@ -250,8 +250,8 @@ install_homebrew() {
     # Download and extract Homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C "$homebrew_dir"
     
-    # Add brew shellenv hook to bashrc
-    echo 'eval "$('"$homebrew_dir"'/bin/brew shellenv)"' >> "$HOME/.bashrc"
+    # Get the brew shellenv output and add it to bashrc
+    "$homebrew_dir"/bin/brew shellenv >> "$HOME/.bashrc"
     
     # Source the brew shellenv for current session
     eval "$("$homebrew_dir"/bin/brew shellenv)"
@@ -271,7 +271,7 @@ install_docker() {
     print_success "Docker already installed! Skipping."
   else
     print_info "Installing Docker..."
-    brew install --cask docker
+    brew install --cask docker --no-quarantine
   fi
 }
 
