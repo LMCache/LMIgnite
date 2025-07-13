@@ -24,11 +24,15 @@ Feature highlights:
 
 Before you begin, make sure you have the following requirements installed and configured:
 
-1. **MacOS laptop** (support on other OS is coming!)
+1. **MacOS laptop**
 2. **Lambda Labs API key** to connect to Lambda Cloud (the support for other clouds and self-host Kubernetes cluster is coming soon!)
 3. **Hugging Face access token** for model access
 
-Visit the the [documentation](https://docs.tensormesh.ai/quickstart/prerequisites.html) on how to get them.
+**OS Support:**
+- **MacOS**: Full support with automatic dependency installation
+- **Other OS (Windows/Linux)**: Supported if you have `docker compose` installed manually
+
+Visit the [documentation](https://docs.tensormesh.ai/quickstart/prerequisites.html) on how to get them.
 
 ## Quick Start
 
