@@ -34,8 +34,9 @@ Visit the the [documentation](https://docs.tensormesh.ai/quickstart/prerequisite
 
 ### 1. Run the one-click installation script
 
+(Make sure you have lambda API key and huggingface token in hand)
 
-Click `Command(⌘) + Space`, and type `terminal` (or other terminal that you like), and then hit enter to launch a terminal.
+Hit `Command(⌘) + Space` on your keyboard, and type `terminal` (or other terminal that you like), and then hit enter to launch the terminal.
 
 Then, simply copy and paste the following command to your terminal
 
@@ -44,12 +45,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/
 ```
 
 This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs in your own cloud!
-
-This script may ask you for the following:
-
-- Your MacOS login password (if some of the dependencies are missing)
-- Lambda Labs API key
-- Huggingface token
 
 
 ### 2. Create a Cluster
