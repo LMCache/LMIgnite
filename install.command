@@ -241,19 +241,26 @@ install_homebrew() {
   if check_command brew; then
     print_success "Homebrew already installed! Skipping."
   else
-    print_info "Installing Homebrew (non-interactive)..."
-    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    print_info "Installing Homebrew (non-interactive, no sudo required)..."
+    
+    # Create Homebrew directory in user's home
+    local homebrew_dir="$HOME/homebrew"
+    mkdir -p "$homebrew_dir"
+    
+    # Download and extract Homebrew
+    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C "$homebrew_dir"
+    
+    # Add brew shellenv hook to bashrc
+    echo 'eval "$('"$homebrew_dir"'/bin/brew shellenv)"' >> "$HOME/.bashrc"
+    
+    # Source the brew shellenv for current session
+    eval "$("$homebrew_dir"/bin/brew shellenv)"
+    
+    print_success "Homebrew installed to $homebrew_dir"
+    print_info "brew shellenv hook added to ~/.bashrc"
   fi
   
-  # Add Homebrew to PATH for this session and future
-  if [[ -d /opt/homebrew/bin ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.bashrc"
-  elif [[ -d /usr/local/bin ]]; then
-    eval "$(/usr/local/bin/brew shellenv)"
-    echo 'eval "$(/usr/local/bin/brew shellenv)"' >> "$HOME/.bashrc"
-  fi
-  
+  # Set Homebrew to not auto-update during installation
   export HOMEBREW_NO_AUTO_UPDATE=1
 }
 
@@ -378,9 +385,6 @@ wait_for_service() {
 
 run_full_installation() {
   print_header "Full Installation Path (Docker + Dependencies)"
-  
-  print_info "Requesting administrator permission to install Docker and friends..."
-  sudo -v
   
   install_homebrew
   install_docker
