@@ -15,37 +15,33 @@ Launch LMIgnite App
      </iframe>
    </div>
 
-1. Clone the repo
------------------
+1. Run the one-click installation script
+----------------------------------------
+
+Click `Command(⌘) + Space`, and type `terminal` (or other terminal that you like), and then hit enter to launch a terminal.
+
+Then, simply copy and paste the following command to your terminal:
 
 .. code-block:: bash
 
-   # via HTTPS
-   git clone https://github.com/LMCache/one-click-deployment.git
-   # or via SSH
-   git clone git@github.com:LMCache/one-click-deployment.git
+   bash <(wget -qO- https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/main/install.command)
 
-   cd one-click-deployment
+This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs in your own cloud!
 
-2. Launch LMIgnite App
---------------------------------
+This script may ask you for the following:
 
-Set your Lambda Labs API key and start the app in your shell:
+- Your MacOS login password (if some of the dependencies are missing)
+- Lambda Labs API key
+- Huggingface token
 
-.. code-block:: bash
+2. Access the LMIgnite App
+--------------------------
 
-   LAMBDA_LABS_API_KEY=<YOUR_LAMBDA_LABS_API_KEY> docker compose up
-
-Open http://localhost:3001 in your browser after seeing the following log:
-
-.. code-block:: csharp
-
-   app-1       | [Nest] 18  - 07/10/2025, 6:48:08 AM     LOG [NestApplication] Nest application successfully started +169ms
-   app-1       | NestJS backend is running on: http://localhost:3001
-   app-1       | Swagger documentation available at: http://localhost:3001/api/docs
-   app-1       | Environment: production
+The script will automatically open your browser to the LMIgnite app. If it doesn't, you can manually open up a browser and access the app at http://localhost:3001.
 
 Tips
 ----
 
-* If port 3001 is in use, you can change it in ``docker-compose.yml``. 
+* If the installation script fails, make sure you have the prerequisites installed as described in the :doc:`prerequisites` section.
+* The script will handle all dependencies and setup automatically.
+* If you encounter any issues, check the terminal output for error messages. 
