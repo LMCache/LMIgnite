@@ -40,7 +40,7 @@ Click `Command(⌘) + Space`, and type `terminal` (or other terminal that you li
 Then, simply copy and paste the following command to your terminal
 
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/main/install.command)
+bash <(curl -fsSL https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/main/install.command)
 ```
 
 This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs in your own cloud!
