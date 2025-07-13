@@ -18,7 +18,9 @@ Launch LMIgnite App
 1. Run the one-click installation script
 ----------------------------------------
 
-Click `Command(⌘) + Space`, and type `terminal` (or other terminal that you like), and then hit enter to launch a terminal.
+Make sure that you have lambda API key and huggingface token in hand, as shown in the :doc:`prerequisites` section.
+
+Hit `Command(⌘) + Space` on your keyboard, and type `terminal` (or other terminal that you like), and then hit enter to launch the terminal.
 
 Then, simply copy and paste the following command to your terminal:
 
@@ -27,12 +29,6 @@ Then, simply copy and paste the following command to your terminal:
    bash <(wget -qO- https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/main/install.command)
 
 This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs in your own cloud!
-
-This script may ask you for the following:
-
-- Your MacOS login password (if some of the dependencies are missing)
-- Lambda Labs API key
-- Huggingface token
 
 2. Access the LMIgnite App
 --------------------------
