@@ -66,7 +66,7 @@ This script will guide you through the installation process, and will pop up a b
 ### 3. Create Deployments
 
 1. In the left sidebar, click **Deployments**, then hit **+ Create Deployment**
-2. Search or select from existing model cards (e.g., meta-llama/Llama-3.2-1B-Instruct)
+2. Search or select from existing model cards (e.g., meta-llama/Llama-3.1-8B-Instruct)
 3. Configure basics:
    - Deployment Name: give it a descriptive name (e.g., llama-8b-test)
    - Target Cluster: select one of your Active clusters
