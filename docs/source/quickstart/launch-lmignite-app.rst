@@ -18,7 +18,11 @@ Launch LMIgnite App
 1. Run the one-click installation script
 ----------------------------------------
 
-Make sure that you have lambda API key and huggingface token in hand, as shown in the :doc:`prerequisites` section.
+.. note::
+  **OS Support:**
+  
+  - **MacOS**: Full support with automatic dependency installation
+  - **Other OS (Windows/Linux)**: Supported if you have `docker compose` installed manually
 
 Hit `Command(⌘) + Space` on your keyboard, and type `terminal` (or other terminal that you like), and then hit enter to launch the terminal.
 

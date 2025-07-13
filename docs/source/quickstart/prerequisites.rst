@@ -3,8 +3,17 @@ Prerequisites
 
 Before you begin, make sure you have the following requirements installed and configured:
 
-1. Lambda Labs API key
-2. Hugging Face access token
+1. A MacOS laptop (primary support)
+2. Lambda Labs API key
+3. Hugging Face access token
+
+**OS Support:**
+
+- **MacOS**: Full support with automatic dependency installation
+- **Other OS (Windows/Linux)**: Supported if you have `docker compose` installed manually
+
+.. note::
+  For non-MacOS users, you'll need to install `docker compose` manually before proceeding with the installation.
 
 
 1. Get a Lambda Labs API Key
