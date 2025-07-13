@@ -279,7 +279,7 @@ install_docker() {
   else
     print_info "Installing Docker..."
     brew fetch homebrew/cask/docker
-    brew install --cask docker --no-quarantine
+    brew install docker
   fi
 }
 
