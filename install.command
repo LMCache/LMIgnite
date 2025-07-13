@@ -240,8 +240,15 @@ install_homebrew() {
   
   if check_command brew; then
     print_success "Homebrew already installed! Skipping."
+    # Try brew list to check if Homebrew is working
+    if ! brew list >/dev/null 2>&1; then
+      print_info "Homebrew not working properly. Running brew update-reset..."
+      brew update-reset
+      # Rerun to check if it works. If not we should exit.
+      brew list >/dev/null
+    fi
   else
-    print_info "Installing Homebrew (non-interactive, no sudo required)..."
+    print_info "Installing Homebrew (non-interactive)..."
     
     # Create Homebrew directory in user's home
     local homebrew_dir="$HOME/homebrew"
