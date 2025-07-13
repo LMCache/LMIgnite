@@ -271,6 +271,7 @@ install_docker() {
     print_success "Docker already installed! Skipping."
   else
     print_info "Installing Docker..."
+    brew fetch homebrew/cask/docker
     brew install --cask docker --no-quarantine
   fi
 }
