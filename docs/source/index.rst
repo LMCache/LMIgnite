@@ -11,8 +11,7 @@ LMIgnite Overview
    :align: center
    :width: 400px
 
-Deploy LLMs to your own cluster & cloud via web browser
-------------------------------------------------------
+**Deploy LLMs to your own cluster & cloud via web browser 🚀**
 
 LMIgnite ignites your cluster with LLM deployments. It is your one-click solution to deploy high-performance, enterprise-grade LLM serving infrastructure into your own cluster and cloud environments.
 

@@ -1,7 +1,7 @@
 Quick Start Guide
 =================
 
-Get up and running with **One-Click Deployment** in just a few simple steps.
+Get up and running with **LMIgnite** in just a few simple steps.
 
 This guide is split into three main sections:
 
