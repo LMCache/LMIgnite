@@ -25,6 +25,7 @@ jobs:
           pip install sphinx
           pip install sphinx-rtd-theme
           pip install alabaster
+          pip install furo
 
       - name: Build Sphinx Documentation
         run: |
