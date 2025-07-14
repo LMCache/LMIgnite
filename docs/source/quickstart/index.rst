@@ -11,6 +11,8 @@ This guide is split into three main sections:
 
 Feel free to let us know if anything's unclear or you need more details!
 
+---------
+
 .. toctree::
    :maxdepth: 2
    :hidden:

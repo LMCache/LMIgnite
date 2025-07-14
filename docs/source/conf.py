@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'lmignite-docs'
+project = 'LMIgnite'
 copyright = '2025, TensorMesh, Inc.'
 author = 'TensorMesh, Inc.'
 release = 'v0.0.1'
@@ -15,7 +15,7 @@ release = 'v0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 # Theme configuration
-html_theme = 'sphinx_rtd_theme'  # Read the Docs theme (similar to Rancher)
+html_theme = 'furo'  # Read the Docs theme (similar to Rancher)
 
 # Theme options
 html_theme_options = {
@@ -37,12 +37,11 @@ extensions = [
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
 html_static_path = ['_static']
 
 # Logo and favicon
-html_logo = '_static/logo.png'  # Add your logo
-html_favicon = '_static/favicon.ico'
+html_logo = '../icon.jpg'
+html_favicon = '../icon.jpg'
 
 # Custom CSS
 html_static_path = ['_static']

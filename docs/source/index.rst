@@ -3,41 +3,30 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-LMIgnite Documentation
-======================
+LMIgnite Overview
+=================
 
 .. image:: ../icon.jpg
    :alt: LMIgnite Logo
    :align: center
    :width: 400px
 
-Welcome to LMIgnite! 🚀
------------------------
+Deploy LLMs to your own cluster & cloud via web browser
+------------------------------------------------------
 
-**Deploy production-ready LLM infra to any cloud with just a web browser.**
+LMIgnite ignites your cluster with LLM deployments. It is your one-click solution to deploy high-performance, enterprise-grade LLM serving infrastructure into your own cluster and cloud environments.
 
-LMIgnite is your one-stop solution for deploying high-performance, enterprise-grade LLM serving infrastructure. Whether you're a developer building AI applications or an enterprise scaling LLM services, we make it simple to get started while delivering production-ready performance.
+Why LMIgnite?
+-------------
 
-What Makes LMIgnite Special?
-----------------------------
-
-Under the hood, we deliver **best-in-class LLM serving performance** through deep, full-stack integration:
-
-**Core Technologies:**
-
-- **Orchestration**: vLLM production stack for enterprise-scale deployment
-- **Inference Engine**: vLLM for high-performance model serving
-- **KV Cache Transmission**: LMCache for intelligent caching and 3-10x latency reduction
-- **Datacenter GPU Connection**: NIXL, mooncake, and other high-speed interconnects
-- **Deployment Optimization**: P/D disaggregation, fault tolerance, shared prefix caching
-
-**Key Benefits:**
-
-- ⚡ **3-10x faster response times** through intelligent KV cache management
-- 🏢 **Enterprise-ready** with multi-tenancy, autoscaling, and high availability
-- 🔧 **One-click deployment** across AWS, GCP, Azure, and on-premises
-- 📊 **Built-in monitoring** and performance analytics
-- 🔒 **Production security** with enterprise-grade features
+- **Self-hosted**: You run your LLM with your own machines. It's cheap and private.
+- **High-performance**: Deep integration with open-source LLM projects like vLLM, LMCache, and vLLM production stack.
+- **Easy-to-use**: Deploy LLMs just by your browser.
+- **One-click runnable**: Run the install script and the deployment web UI pops up for you.
+- **3-10x faster**: Thanks to LMCache and orchestration optimizations.
+- **Enterprise-ready**: Multi-tenancy, autoscaling, high availability.
+- **Wide support**: AWS, GCP, Azure, Lambda, and on-premises.
+- **Built-in monitoring**: Performance analytics included.
 
 What You'll Learn
 -----------------
@@ -53,18 +42,12 @@ This documentation will guide you through:
 
 Ready to get started? Head to our :doc:`quickstart/index` guide for a step-by-step walkthrough!
 
+---------
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   overview/index
+   self
    quickstart/index
    tutorials/index
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
