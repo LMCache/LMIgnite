@@ -1,6 +1,9 @@
-<h2 align="center">Deploy LLMs to your own cluster & cloud via web browser</h1>
+<p align="center">
+  <img src="docs/icon.jpg" alt="LMIgnite Logo" width="50%">
+</p>
+<h2 align="center">Deploy LLMs to your own cluster & cloud via web browser</h2>
 
-LMIgnite ignites your cluster with LLM deployments. It is your one-click solution to deploy high-performance, enterprise-grade LLM serving infrastructure into cloud environments and your own cluster.
+LMIgnite ignites your cluster with LLM deployments. It is your one-click solution to deploy high-performance, enterprise-grade LLM serving infrastructure into your own cluster and cloud environments.
 
 ## Why LMIgnite?
 
@@ -77,7 +80,7 @@ This script will guide you through the installation process, and will pop up a b
 [![Create cluster and deploy LLMs](http://img.youtube.com/vi/ykCBRNhVlcE/0.jpg)](http://www.youtube.com/watch?v=ykCBRNhVlcE "Create cluster and deploy LLMs")
 
 1. In the left sidebar, click **Deployments**, then hit **+ Create Deployment**
-2. Search or select from existing model cards (e.g., meta-llama/Llama-3.2-1B-Instruct)
+2. Search or select from existing model cards (e.g., meta-llama/Llama-3.1-8B-Instruct)
 3. Configure basics:
    - Deployment Name: give it a descriptive name (e.g., llama-8b-test)
    - Target Cluster: select one of your Active clusters

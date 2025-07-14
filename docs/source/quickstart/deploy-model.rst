@@ -46,7 +46,7 @@ Deploy Model
    The deployment process itself could take up to **10 minutes** to complete.
 
 * In the left sidebar, click **Deployments**, then hit **+ Create Deployment**.
-* Search or select from existing model cards, pick the model you want to deploy (e.g. meta-llama/Llama-3.2-1B-Instruct).
+* Search or select from existing model cards, pick the model you want to deploy (e.g. meta-llama/Llama-3.1-8B-Instruct).
 * Configure basics
 
   * Deployment Name: give it a descriptive name (e.g. llama-8b-test).

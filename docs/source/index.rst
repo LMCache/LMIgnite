@@ -6,8 +6,13 @@
 LMIgnite Documentation
 ======================
 
+.. image:: ../icon.jpg
+   :alt: LMIgnite Logo
+   :align: center
+   :width: 400px
+
 Welcome to LMIgnite! 🚀
-----------------------
+-----------------------
 
 **Deploy production-ready LLM infra to any cloud with just a web browser.**
 
