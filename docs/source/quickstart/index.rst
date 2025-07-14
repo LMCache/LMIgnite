@@ -1,5 +1,5 @@
 Quick Start Guide
-================
+=================
 
 Get up and running with **One-Click Deployment** in just a few simple steps.
 

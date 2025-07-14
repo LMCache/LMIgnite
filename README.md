@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/icon.jpg" alt="LMIgnite Logo" width="50%">
+</p>
+
 # LMIgnite: Deploy production-ready LLM infra to any cloud using just a web browser.
 
 
