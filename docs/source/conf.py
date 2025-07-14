@@ -9,7 +9,7 @@
 project = 'LMIgnite'
 copyright = '2025, TensorMesh, Inc.'
 author = 'TensorMesh, Inc.'
-release = 'v0.0.1'
+release = 'v0.1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
