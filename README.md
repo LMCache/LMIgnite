@@ -1,8 +1,6 @@
-# LMIgnite: Deploy production-ready LLM infra to any cloud using just a web browser.
+<h2 align="center">Deploy LLMs to your own cluster & cloud via web browser</h1>
 
-
-LMIgnite ignites your cluster with LLM deployments. It is your one-click solution for high-performance, enterprise-grade LLM serving infrastructure.
-
+LMIgnite ignites your cluster with LLM deployments. It is your one-click solution to deploy high-performance, enterprise-grade LLM serving infrastructure into cloud environments and your own cluster.
 
 ## Why LMIgnite?
 
@@ -22,21 +20,26 @@ Feature highlights:
 
 ## Prerequisites
 
-Before you begin, make sure you have the following requirements installed and configured:
+Before you begin, make sure you have the following:
 
-1. **MacOS laptop**
-2. **Lambda Labs API key** to connect to Lambda Cloud (the support for other clouds and self-host Kubernetes cluster is coming soon!)
-3. **Hugging Face access token** for model access
-
-**OS Support:**
-- **MacOS**: Full support with automatic dependency installation
-- **Other OS (Windows/Linux)**: Supported if you have `docker compose` installed manually
+1. **Lambda Labs API key** to connect to Lambda Cloud (the support for other clouds and self-host Kubernetes cluster is coming soon!)
+2. **Hugging Face access token** for model access
 
 Visit the [documentation](https://docs.tensormesh.ai/quickstart/prerequisites.html) on how to get them.
 
+Currently, we support **MacOS** with automatic dependency installation. For users with **other OS (Windows/Linux)**, you may need to install `docker compose` manually before using the following one-click script.
+
+
 ## Quick Start
 
+
 ### 1. Run the one-click installation script
+
+
+#### Video tutorial:
+
+[![Install LMIgnite](http://img.youtube.com/vi/Xealh5eEnx4/0.jpg)](http://www.youtube.com/watch?v=Xealh5eEnx4 "Install LMIgnite")
+
 
 (Make sure you have lambda API key and huggingface token in hand)
 
@@ -50,8 +53,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/
 
 This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs in your own cloud!
 
-
 ### 2. Create a Cluster
+
+
+#### Video tutorial:
+
+[![Create cluster and deploy LLMs](http://img.youtube.com/vi/ykCBRNhVlcE/0.jpg)](http://www.youtube.com/watch?v=ykCBRNhVlcE "Create cluster and deploy LLMs")
 
 1. In the left sidebar, click **Cluster**, then hit **+ Create Cluster**
 2. Fill in Cluster Configuration:
@@ -64,6 +71,10 @@ This script will guide you through the installation process, and will pop up a b
 4. Wait until the status shows **Active** (Pending → init → wait_k8s → Active)
 
 ### 3. Create Deployments
+
+#### Video tutorial:
+
+[![Create cluster and deploy LLMs](http://img.youtube.com/vi/ykCBRNhVlcE/0.jpg)](http://www.youtube.com/watch?v=ykCBRNhVlcE "Create cluster and deploy LLMs")
 
 1. In the left sidebar, click **Deployments**, then hit **+ Create Deployment**
 2. Search or select from existing model cards (e.g., meta-llama/Llama-3.2-1B-Instruct)
