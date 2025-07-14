@@ -50,7 +50,7 @@ To get your HF access token:
 
       hf_xxx
 
-#. Be sure to save your token somewhere safe. You will not be able to see it again after closing the modal. If you lose it, you’ll need to create a new one.
+#. Be sure to save your token somewhere safe. You will not be able to see it again after closing the modal dialog. If you lose it, you’ll need to create a new one.
 
 .. note::
    Some models on Hugging Face are "gated" and require you to request access on the model card page. You may need to agree to conditions, and approval can be automatic or manual depending on the model author.
