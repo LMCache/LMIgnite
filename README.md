@@ -3,22 +3,22 @@
 </p>
 <h2 align="center">Deploy LLMs to your own cluster & cloud via web browser</h2>
 
-LMIgnite ignites your cluster with LLM deployments. It is your one-click solution to deploy high-performance, enterprise-grade LLM serving infrastructure into your own cluster and cloud environments.
+LMIgnite sets your cluster on fire with LLM deployments. It is your one-click solution to deploy high-performance, enterprise-grade LLM serving infrastructure into your own cluster and cloud environments.
 
 ## Why LMIgnite?
 
 LMIgnite is:
 
-- **Self-hosted**: You run your LLM with your own machines. It's cheap and private.
+- **Self-hosted**: You run your LLM with your own machines (real or virtual). It's cheap and private.
 - **High-performance**: We give you the best performance by deeply integrating open-source LLM projects, including inference engine ([vLLM](https://github.com/vllm-project/vllm) ![GitHub Repo stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social)), inter-inference-engine communication ([LMCache](https://github.com/LMCache/LMCache) ![GitHub Repo stars](https://img.shields.io/github/stars/LMCache/LMCache?style=social)) and production-level orchestration ([vLLM production stack](https://github.com/vllm-project/production-stack) ![GitHub Repo stars](https://img.shields.io/github/stars/vllm-project/production-stack?style=social)).
 
 Feature highlights:
 
-- 🌐 **Easy-to-use**: Deploy LLMs **just by your browser**.
+- 🌐 **Easy-to-use**: Deploy LLMs **just by using your browser**.
 - 🚀 **One-click runnable**: Run the bash script, and the webpage for LLM deployment will pop up for you.
 - ⚡  **3-10x faster response times** through our own communication library ([LMCache](https://github.com/LMCache/LMCache) ![GitHub Repo stars](https://img.shields.io/github/stars/LMCache/LMCache?style=social)) and orchestration library ([vLLM production stack](https://github.com/vllm-project/production-stack) ![GitHub Repo stars](https://img.shields.io/github/stars/vllm-project/production-stack?style=social)).
 - 🏢 **Enterprise-ready** with multi-tenancy, autoscaling, and high availability
-- 🔧 **Wide support** across clouds such as AWS, GCP, Azure, and Lambda, plus on-premises
+- 🔧 **Wide support** across clouds such as AWS, GCP, Azure, and Lambda or on-premises
 - 📊 **Built-in monitoring** and performance analytics
 
 ## Prerequisites
@@ -48,13 +48,13 @@ Currently, we support **MacOS** with automatic dependency installation. For user
 
 Hit `Command(⌘) + Space` on your keyboard, and type `terminal` (or other terminal that you like), and then hit enter to launch the terminal.
 
-Then, simply copy and paste the following command to your terminal
+Then, copy and paste the following command to your terminal
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/main/install.command)
 ```
 
-This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs in your own cloud!
+This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs on your own cloud!
 
 ### 2. Create a Cluster
 
