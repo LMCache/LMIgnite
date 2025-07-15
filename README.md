@@ -38,11 +38,7 @@ Currently, we support **MacOS** with automatic dependency installation. For user
 
 ### 1. Run the one-click installation script
 
-
-#### Video tutorial:
-
-[![Install LMIgnite](http://img.youtube.com/vi/Xealh5eEnx4/0.jpg)](http://www.youtube.com/watch?v=Xealh5eEnx4 "Install LMIgnite")
-
+**Video tutorial:** [link](http://www.youtube.com/watch?v=Xealh5eEnx4).
 
 (Make sure you have lambda API key and huggingface token in hand)
 
@@ -58,10 +54,7 @@ This script will guide you through the installation process, and will pop up a b
 
 ### 2. Create a Cluster
 
-
-#### Video tutorial:
-
-[![Create cluster and deploy LLMs](http://img.youtube.com/vi/ykCBRNhVlcE/0.jpg)](http://www.youtube.com/watch?v=ykCBRNhVlcE "Create cluster and deploy LLMs")
+**Video tutorial:** [link](http://www.youtube.com/watch?v=ykCBRNhVlcE).
 
 1. In the left sidebar, click **Cluster**, then hit **+ Create Cluster**
 2. Fill in Cluster Configuration:
@@ -77,7 +70,7 @@ This script will guide you through the installation process, and will pop up a b
 
 #### Video tutorial:
 
-[![Create cluster and deploy LLMs](http://img.youtube.com/vi/ykCBRNhVlcE/0.jpg)](http://www.youtube.com/watch?v=ykCBRNhVlcE "Create cluster and deploy LLMs")
+**Video tutorial:** [link](http://www.youtube.com/watch?v=ykCBRNhVlcE).
 
 1. In the left sidebar, click **Deployments**, then hit **+ Create Deployment**
 2. Search or select from existing model cards (e.g., meta-llama/Llama-3.1-8B-Instruct)
