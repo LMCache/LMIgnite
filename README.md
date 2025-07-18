@@ -68,8 +68,6 @@ This script will guide you through the installation process, and will pop up a b
 
 ### 3. Create Deployments
 
-#### Video tutorial:
-
 **Video tutorial:** [link](http://www.youtube.com/watch?v=ykCBRNhVlcE).
 
 1. In the left sidebar, click **Deployments**, then hit **+ Create Deployment**
