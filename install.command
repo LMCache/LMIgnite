@@ -343,7 +343,7 @@ download_compose_file() {
 }
 
 launch_docker_compose() {
-  docker compose pull && docker compose -f "$COMPOSE_FILE" up -d
+  docker compose -f "$COMPOSE_FILE" pull && docker compose -f "$COMPOSE_FILE" up -d
 }
 
 launch_lmignite() {
