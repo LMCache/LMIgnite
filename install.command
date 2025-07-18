@@ -285,13 +285,13 @@ install_docker() {
 
 install_colima() {
   print_step "4. Installing Colima (Docker Runtime for macOS)"
-  print_warning "Colima is not installed by default. Please install it manually."
-  #if check_command colima; then
-  #  print_success "Colima already installed! Skipping."
-  #else
-  #  print_info "Installing Colima..."
-  #  brew install colima
-  #fi
+
+  if check_command colima; then
+    print_success "Colima already installed! Skipping."
+  else
+    print_info "Installing Colima..."
+    brew install colima
+  fi
 }
 
 install_docker_compose() {
