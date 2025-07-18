@@ -458,7 +458,8 @@ main() {
   echo "✨ Starting LMIgnite installation... ✨"
   
   # Collect API keys first (required for both paths)
-  collect_api_keys
+  # NOTE: We do not need this anymore!
+  #collect_api_keys
   
   # Check if we can skip installation
   if check_docker_availability; then

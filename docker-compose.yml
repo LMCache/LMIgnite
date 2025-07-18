@@ -18,8 +18,6 @@ services:
 
   gateway:
     image: tensormesh/lmignite-gateway:latest
-    environment:
-      - LAMBDA_LABS_API_KEY=${LAMBDA_LABS_API_KEY}
     ports:
       - 8000:8000
     volumes:
