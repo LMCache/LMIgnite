@@ -285,7 +285,7 @@ install_docker() {
 
 install_colima() {
   print_step "4. Installing Colima (Docker Runtime for macOS)"
-  
+
   if check_command colima; then
     print_success "Colima already installed! Skipping."
   else
@@ -342,13 +342,15 @@ download_compose_file() {
   fi
 }
 
+launch_docker_compose() {
+  docker compose pull && docker compose -f "$COMPOSE_FILE" up -d
+}
+
 launch_lmignite() {
   print_step "8. Launching LMIgnite Stack (vLLM + LMCache)"
   
   print_info "Launching LMIgnite stack via Docker Compose..."
-  if LAMBDA_LABS_API_KEY="${LAMBDA_LABS_API_KEY:-}" \
-     HF_TOKEN="${HF_TOKEN:-}" \
-     docker compose -f "$COMPOSE_FILE" up -d; then
+  if launch_docker_compose; then
     print_success "LMIgnite stack launched successfully"
   else
     print_error "Failed to launch LMIgnite stack"
