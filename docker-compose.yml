@@ -82,9 +82,9 @@ services:
     command: pnpm start:prod
 
 volumes:
-  postgres_data:
+  postgres_data_v0.1:
     driver: local
-  gateway_data:
+  gateway_data_v0.1:
     driver: local
 
 networks:
