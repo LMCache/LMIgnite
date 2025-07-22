@@ -43,4 +43,5 @@ jobs:
           secrets: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
           bucket: 'docs.tensormesh.ai'
           sync_dir_from: 'docs/build/html'
-          exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$' 
+          sync_dir_to: 'lmignite'          # ← upload under lmignite/ prefix
+          exclude: '.*\.md$|\.gitignore$|\.git/.*$|\.github/.*$'
