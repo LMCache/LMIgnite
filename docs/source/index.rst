@@ -27,17 +27,56 @@ Why LMIgnite?
 - **Wide support**: AWS, GCP, Azure, Lambda, and on-premises.
 - **Built-in monitoring**: Performance analytics included.
 
+Supported Environments
+----------------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Environment
+     - Status
+     - Notes
+   * - Lambda Labs
+     - ✅ Available
+     - Fully supported and tested
+   * - NEBIUS
+     - 🚧 Next Release
+     - Support coming in the next release
+   * - Google GKE
+     - 🚧 Next Release
+     - Support coming in the next release
+   * - AWS
+     - 🚧 Planned
+     - Planned for future support
+   * - Azure
+     - 🚧 Planned
+     - Planned for future support
+   * - RunPod
+     - 🚧 Planned
+     - Planned for future support
+   * - FluidStack
+     - 🚧 Planned
+     - Planned for future support
+   * - Paperspace
+     - 🚧 Planned
+     - Planned for future support
+   * - Local Cluster
+     - 🚧 Planned
+     - Planned for future support
+
+
 What You'll Learn
 -----------------
 
 This documentation will guide you through:
 
-1. **Prerequisites** - Setting up your environment (Docker Compose, cloud API keys, Hugging Face token)
-2. **Deployment** - Deploying GPU clusters on your chosen cloud provider
-3. **Model Serving** - Deploying and configuring LLMs on your infrastructure
-4. **Integration** - Chat with your LLMs through the web UI or OpenAI-compatible API
-5. **Monitoring** - Track performance, usage, and system health
-6. **Advanced Features** - Multi-tenancy, autoscaling, and enterprise capabilities
+1. **Prerequisites** – Setting up your environment (Docker Compose, cloud API keys, Hugging Face token)
+2. **Installing & Launching LMIgnite** – Running the one-click install script and accessing the web UI
+3. **Cluster Creation** – Creating and configuring GPU clusters on your chosen cloud provider
+4. **Model Deployment** – Deploying and configuring LLMs on your infrastructure
+5. **Chatbot Integration** – Connecting your chatbot application to LMIgnite using the API
+6. **Monitoring** – Accessing dashboards to track performance, usage, and system health
+7. **Advanced Features** – Multi-tenancy, autoscaling, and enterprise capabilities
 
 Ready to get started? Head to our :doc:`quickstart/index` guide for a step-by-step walkthrough!
 
