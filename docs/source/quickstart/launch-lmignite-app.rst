@@ -20,8 +20,7 @@ Launch LMIgnite App
 
 .. note::
   **OS Support:**
-  
-  - **MacOS**: Full support with automatic dependency installation
+  - **macOS**: Full support with automatic dependency installation
   - **Other OS (Windows/Linux)**: Supported if you have `docker compose` installed manually
 
 Hit `Command(⌘) + Space` on your keyboard, and type `terminal` (or other terminal that you like), and then hit enter to launch the terminal.
@@ -32,12 +31,12 @@ Then, simply copy and paste the following command to your terminal:
 
   bash <(curl -fsSL https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/main/install.command)
 
-This script will guide you through the installation process, and will pop up a browser for you to deploy LLMs in your own cloud!
+This script will guide you through installation and automatically open a browser for you to deploy LLMs in your own cloud!
 
 2. Access the LMIgnite App
 --------------------------
 
-The script will automatically open your browser to the LMIgnite app. If it doesn't, you can manually open up a browser and access the app at http://localhost:3001.
+The script will automatically open your browser to the LMIgnite app. If it doesn't, open your browser and go to http://localhost:3001.
 
 Tips
 ----
