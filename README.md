@@ -46,21 +46,33 @@ For users on **Windows/Linux**, you may need to install `docker compose` manuall
 
 ### 1. Run the one-click installation script
 
-**Video tutorial:** [link](http://www.youtube.com/watch?v=Xealh5eEnx4).
+**Video tutorial:** [link](https://youtu.be/HAK6Evb3SjM).
 
-On your local laptop, hit `Command(⌘) + Space` on your keyboard, and type `terminal` (or other terminal that you like), and then hit enter to launch the terminal.
+**For macOS users:**
 
-Then, copy and paste the following command to your terminal
+On your local laptop, open your terminal (press `Command(⌘) + Space`, type `terminal` (or your preferred terminal), and hit enter).
+
+Then, copy and paste the following command into your terminal:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/LMCache/LMIgnite/refs/heads/main/install.command)
 ```
 
-This script will guide you through installation and open a browser for you to deploy LLMs on your own cloud!
+This script will guide you through installation and automatically open a browser for you to deploy LLMs on your own cloud!
+
+**For Linux/Windows users:**
+
+Make sure you have `docker compose` installed. Then, open your terminal and run:
+
+```bash
+git clone https://github.com/LMCache/LMIgnite && cd LMIgnite && docker compose up
+```
+
+After that, wait for `docker compose up` to launch the containers, then open your favorite browser and go to [http://localhost:3001/](http://localhost:3001/).
 
 ### 2. Add secrets to LMIgnite
 
-**Video tutorial:** [link](https://youtu.be/HAK6Evb3SjM).
+**Video tutorial:** [link](https://youtu.be/zM-GaE0-ba4).
 
 LMIgnite currently supports two types of secrets:
 
@@ -76,7 +88,7 @@ To add your secrets:
 
 ### 3. Create a Cluster
 
-**Video tutorial:** [link](https://youtu.be/HAK6Evb3SjM).
+**Video tutorial:** [link](https://youtu.be/zM-GaE0-ba4).
 
 1. In the left sidebar, click **Cluster**, then hit **+ Create Cluster**
 2. Fill in the Cluster Configuration:
