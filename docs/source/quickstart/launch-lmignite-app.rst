@@ -7,7 +7,7 @@ Launch LMIgnite App
 
    <div style="max-width: 560px;">
      <iframe width="560" height="315"
-       src="https://www.youtube.com/embed/Xealh5eEnx4"
+       src="https://www.youtube.com/embed/HAK6Evb3SjM"
        title="YouTube video player"
        frameborder="0"
        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

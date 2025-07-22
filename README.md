@@ -54,7 +54,7 @@ This script will guide you through the installation process, and will pop up a b
 
 ### 2. Create a Cluster
 
-**Video tutorial:** [link](http://www.youtube.com/watch?v=ykCBRNhVlcE).
+**Video tutorial:** [link](https://youtu.be/HAK6Evb3SjM).
 
 1. In the left sidebar, click **Cluster**, then hit **+ Create Cluster**
 2. Fill in Cluster Configuration:
@@ -68,7 +68,7 @@ This script will guide you through the installation process, and will pop up a b
 
 ### 3. Create Deployments
 
-**Video tutorial:** [link](http://www.youtube.com/watch?v=ykCBRNhVlcE).
+**Video tutorial:** [link](https://youtu.be/zM-GaE0-ba4).
 
 1. In the left sidebar, click **Deployments**, then hit **+ Create Deployment**
 2. Search or select from existing model cards (e.g., meta-llama/Llama-3.1-8B-Instruct)
