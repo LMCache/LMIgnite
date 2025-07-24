@@ -33,6 +33,9 @@ Then, simply copy and paste the following command to your terminal:
 
 This script will guide you through installation and automatically open a browser for you to deploy LLMs in your own cloud!
 
+.. note::
+   If you encounter any issues during installation, check the :doc:`troubleshooting` guide for common problems and solutions.
+
 2. Access the LMIgnite App
 --------------------------
 
@@ -43,4 +46,5 @@ Tips
 
 * If the installation script fails, make sure you have the prerequisites installed as described in the :doc:`prerequisites` section.
 * The script will handle all dependencies and setup automatically.
-* If you encounter any issues, check the terminal output for error messages. 
+* If you encounter any issues, check the terminal output for error messages.
+* For common installation problems and their solutions, see the :doc:`troubleshooting` page. 
