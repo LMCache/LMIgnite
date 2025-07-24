@@ -280,6 +280,7 @@ install_docker() {
     print_info "Installing Docker..."
     brew fetch homebrew/cask/docker
     brew install docker
+    brew install docker-credential-helper
   fi
 }
 
