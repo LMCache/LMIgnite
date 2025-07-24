@@ -3,11 +3,12 @@ Quick Start Guide
 
 Get up and running with **LMIgnite** in just a few simple steps.
 
-This guide is split into three main sections:
+This guide is split into four main sections:
 
 - :doc:`prerequisites`
 - :doc:`launch-lmignite-app`
 - :doc:`deploy-model`
+- :doc:`troubleshooting`
 
 Feel free to let us know if anything's unclear or you need more details!
 
@@ -19,4 +20,5 @@ Feel free to let us know if anything's unclear or you need more details!
 
    prerequisites
    launch-lmignite-app
-   deploy-model 
+   deploy-model
+   troubleshooting 
