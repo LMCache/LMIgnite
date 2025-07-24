@@ -61,3 +61,20 @@ Change the docker volume name to a new one.
    .. code-block:: bash
 
       docker compose -f lmignite-docker-compose.yml up -d
+
+Need More Help?
+===============
+
+If you encounter problems that are not covered in this troubleshooting guide, we encourage you to create an issue on our GitHub repository:
+
+🐛 **Report Issues**: https://github.com/LMCache/LMIgnite/issues
+
+When creating an issue, please include:
+
+- A clear description of the problem
+- Steps to reproduce the issue
+- Your operating system and version
+- Any error messages or logs
+- Screenshots if applicable
+
+Our team and community will help you resolve the issue and we may add the solution to this troubleshooting guide to help other users facing the same problem.
